@@ -270,7 +270,7 @@ const testimonialCarousel = () => {
   let testimonialTime = 5000;
 
   const changeTestimonial = () => {
-    if (testimonialCount >= tabContent.length - 1) {
+    if (testimonialCount > tabContent.length - 1) {
       testimonialCount = 0;
     }
 
