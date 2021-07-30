@@ -270,11 +270,11 @@ const testimonialCarousel = () => {
   let testimonialTime = 5000;
 
   const changeTestimonial = () => {
+    testimonialCount++;
+
     if (testimonialCount > tabContent.length - 1) {
       testimonialCount = 0;
     }
-
-    testimonialCount++;
 
     tabContent.forEach((tab, i) => {
       tab.classList.remove("current-tab");
