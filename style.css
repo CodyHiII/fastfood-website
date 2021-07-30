@@ -1079,6 +1079,12 @@ footer {
   }
 }
 
+@media (max-width: 415px) {
+  .slide {
+    padding: 350px 10% 0 5%;
+  }
+}
+
 @media (max-width: 400px) {
   .button-nav {
     bottom: -120px;
@@ -1154,7 +1160,7 @@ footer {
     left: 5%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .slide {
     padding: 450px 10% 0 5%;
   }
@@ -1169,5 +1175,10 @@ footer {
   }
   .promo-card-2 {
     width: 250px;
+  }
+}
+@media (max-width: 374px) {
+  .slide {
+    padding: 300px 10% 0 5%;
   }
 }
