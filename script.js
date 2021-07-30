@@ -27,6 +27,12 @@ const navSlide = () => {
   burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
 
+    if (nav.classList.contains("nav-active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "initial";
+    }
+
     if (burger.classList.contains("toggle")) {
       burger.classList.remove("toggle");
     } else {
