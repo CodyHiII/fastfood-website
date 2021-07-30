@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700;800;900"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6528d97294.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <nav class="nav-bar">
+      <div class="logo"><img src="img/burger-artwork.png"></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Online Order</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="burger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+
+    <header class="hero-section">
+
+      <div class="background-decoration">
+        <p>O</p>
+      </div>
+
+      <div class="header__track">
+
+        <div class="button-nav">
+          <div><button class="left-button"><i class="fas fa-chevron-left"></i></button></div>
+          <div class="page-counter">
+            <span class="page-count"></span><span>/</span><span>3</span>
+          </div>
+          <div><button class="right-button"><i class="fas fa-chevron-right"></i></button></div>
+        </div>
+
+        <!-- This is where the slide starts -->
+        <div class="slide slide-1 show">
+          <div class="header__main-section">
+            <div class="subtitle">
+              <p>New in menu</p>
+              <div class="subtitle-line"></div>
+            </div>
+            <div class="title"><h1>Double<br>mushroom<br>burger</h1></div>
+            <div class="info-section">
+              <div class="ingredients-list">
+                <ul>
+                  <li>Bacon</li>
+                  <li>Cheese</li>
+                  <li>Mushroom</li>
+                </ul>
+              </div>
+              <div class="price-section">
+                <p class="price-tag">Only</p>
+                <p class="price">$15.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__side-section current__side-img">
+            <img class="burger-bg" src="img/Burger-bg.svg" alt="burger" />
+            <img
+              class="side-img"
+              src="img/Squash Floating-burger-transparent-background-PNG.png"
+              alt="burger"
+            />
+          </div>
+        </div>
+        <!-- This is where the slide ends -->
+
+        <!-- This is where the slide starts -->
+        <div class="slide slide-2">
+          <div class="header__main-section">
+            <div class="subtitle">
+              <p>New in menu</p>
+              <div class="subtitle-line"></div>
+            </div>
+            <div class="title"><h1>Bacon<br>corn<br>burger</h1></div>
+            <div class="info-section">
+              <div class="ingredients-list">
+                <ul>
+                  <li>Bacon</li>
+                  <li>Corn</li>
+                  <li>Cheese</li>
+                </ul>
+              </div>
+              <div class="price-section">
+                <p class="price-tag">Only</p>
+                <p class="price">$11.49</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__side-section">
+            <img class="burger-bg" src="img/Burger-bg.svg" alt="burger" />
+            <img
+              class="side-img"
+              src="img/Squash Floating-burger-transparent-background-PNG-2.png"
+              alt="burger"
+            />
+          </div>
+        </div>
+        <!-- This is where the slide ends -->
+        <!-- This is where the slide starts -->
+        <div class="slide slide-3">
+          <div class="header__main-section">
+            <div class="subtitle">
+              <p>Summer sales</p>
+              <div class="subtitle-line"></div>
+            </div>
+            <div class="title"><h1>Watermelon<br>ice<br>cream</h1></div>
+            <div class="info-section">
+              <div class="ingredients-list">
+                <ul>
+                  <li>Watermelon</li>
+                  <li>Milk</li>
+                  <li>Vanilla</li>
+                </ul>
+              </div>
+              <div class="price-section">
+                <p class="price-tag"><del>$11.99<del></p>
+                <p class="price">$9.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__side-section">
+            <img class="burger-bg" src="img/Burger-bg.svg" alt="burger" />
+            <img class="side-img" src="img/ice-cream.png" alt="burger" />
+          </div>
+        </div>
+        <!-- This is where the slide ends -->
+      </div>
+    </header>
+
+    <section class="welcome-section">
+      <div class="text-section">
+        <p class="welcome-subtitle">Welcome</p>
+        <h3 class="welcome-title">We make the best burger in town</h3>
+        <p class="welcome-description">
+          As well know we are very busy all day. We advice you to call us before arriving, so we can guarantee your seat. We will do our best so you can have the best day / night out.
+        </p>
+        <button class="about-us-bnt"><i class="fas fa-user-friends"></i> More about us</button>
+      </div>
+      <div class="welcome-img-section"><img src="img/fast-food-PNG.png"></div>
+    </section>
+
+    <section class="menu-section">
+      <div class="section-titles">
+        <p>MENU</p>
+        <h1>Choose your combo & order now!</h1>
+      </div>
+      <div class="menu-navigation-container">
+        <div class="menu-navigation">
+          <button class="prev-button menu-buttons"></button>
+          <ul class="menu-navigation-img">
+            <li data-food="bestsellers" class="selected-img"><img class="current-menu-img selected-img" src="img/bestsellers.svg"><div class="food-name">bestsellers</div></li>
+            <li data-food="burger"><img src="img/food svgs/burger.svg"><div class="food-name">burger</div></li>
+            <li data-food="pizza"><img src="img/food svgs/pizza.svg"><div class="food-name">pizza</div></li>
+            <li data-food="chicken"><img src="img/food svgs/chicken.svg"><div class="food-name">chicken</div></li>
+            <li data-food="icecream"><img src="img/food svgs/icecream.svg"><div class="food-name">icecream</div></li>
+            <li data-food="coffee"><img src="img/food svgs/coffe.svg"><div class="food-name">coffee</div></li>
+          </ul>
+          <button class="next-button menu-buttons"></button>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item-container" data-menu="burger">
+          <div class="menu-item">
+            <h2>Smoked Brisket Sandwich <span class="menu-item-price">$ 39</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="icecream">
+          <div class="menu-item">
+            <h2>Watermelon Ice Cream <span class="menu-item-price">$ 9.50</span></h2>
+            <p class="menu-item-description">Watermelon, Milk, Vanilla extract & Chocolate served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="pizza">
+          <div class="menu-item">
+            <h2>6 Piece Mozzarella Sticks <span class="menu-item-price">$ 10.99</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="chicken">
+          <div class="menu-item">
+            <h2>Pulled Chicken Sandwich <span class="menu-item-price">$ 7</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="pizza">
+          <div class="menu-item">
+            <h2>Pizza Margherita <span class="menu-item-price">$ 12.49</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="icecream">
+          <div class="menu-item">
+            <h2>Choco Vanilla Mixt Ice Cream <span class="menu-item-price">$ 4</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="coffee">
+          <div class="menu-item">
+            <h2>Caffe Latte <span class="menu-item-price">$ 3.50</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+        <div class="menu-item-container" data-menu="coffee">
+          <div class="menu-item">
+            <h2>Cappuccino <span class="menu-item-price">$ 6</span></h2>
+            <p class="menu-item-description">Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promo-card-section">
+      <div class="promo-card-container">
+        <div class="promo-card-1 promo-card">
+          <div class="promo-card-text">
+            <p class="promo-card-subtitle">This month's special</p>
+            <h4 class="promo-card-title">The Japanese Oishii Burger</h1>
+            <button class="promo-card-button">Order now <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="promo-card-img"><img src="img/burger-card.png"></div>
+        </div>
+        <div class="promo-card-2 promo-card">
+          <div class="promo-card-text">
+            <p class="promo-card-subtitle">Festival Special</p>
+            <h4 class="promo-card-title">Burger With Benefits</h1>
+            <button class="promo-card-button">Order now <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="promo-card-img"><img src="img/burger-card-2.png"></div>
+        </div>
+      </div>
+      <div class="promo-small-card-container">
+        <div class="promo-card-3 promo-card promo-card-small">
+          <div class="promo-card-text">
+            <p class="promo-card-subtitle">Offer</p>
+            <h4 class="promo-card-title">Fatty Boy</h1>
+            <button class="promo-card-button">Order now <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="promo-card-img"><img src="img/burger-card.png"></div>
+        </div>
+        <div class="promo-card-4 promo-card promo-card-small">
+          <div class="promo-card-text">
+            <h4 class="promo-card-title">$2 All day every day</h1>
+            <button class="promo-card-button">Get now <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="promo-card-5 promo-card promo-card-small">
+          <div class="promo-card-text">
+            <p class="promo-card-subtitle">Special offer</p>
+            <h4 class="promo-card-title">Get 20% off your order</h1>
+            <button class="promo-card-button">Get now <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>   
+    </section>
+    <section class="delivery-section">
+      <div class="delivery-img"><img src="img/scuter.svg"></div>
+      <div class="delivery-text-section">
+        <p class="delivery-subtitle">Delivery</p>
+        <h3 class="delivery-title">Choose what you want, we'll bring it to you</h3>
+        <p class="delivery-description">
+          As well know we are very busy all day. We advice you to call us before arriving, so we can guarantee your seat. We will do our best so you can have the best day / night out.
+        </p>
+        <button class="about-us-bnt"><i class="fas fa-shopping-cart"></i>Order online</button>
+      </div>
+      <div class="delivery-text-section delivery-text-section-2">
+        <p class="delivery-subtitle">Reward</p>
+        <h3 class="delivery-title">Earn points every time you order online</h3>
+        <p class="delivery-description">
+          As well know we are very busy all day. We advice you to call us before arriving, so we can guarantee your seat. We will do our best so you can have the best day / night out.
+        </p>
+        <button class="about-us-bnt"><i class="fas fa-plus-circle"></i> Learn More</button>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="section-titles">
+        <p>TESTIMONIAL</p>
+        <h1>Clients review</h1>
+      </div>
+      <div class="testimonial-container">
+       <div class="testimonial-img"><img src="img/costumers.jpg"></div>
+
+      <div class="testimonial">
+       <div class="testimonial-carousel">
+         <div class="testimonial-carousel-tab current-tab" id="tab-1">
+         <i class="fas fa-quote-left"></i>
+         <p class="testimonial-comment">One of the best restaurants I've been to. The burgers are excellent. The best restaurant. I will order again</p>
+         <h1 class="testimonial-name">Nina Smith</h1>
+        </div>
+        <div class="testimonial-carousel-tab" id="tab-2">
+          <i class="fas fa-quote-left"></i>
+          <p class="testimonial-comment">The best restaurant. The burgers are very very good</p>
+          <h1 class="testimonial-name">Adam Flee</h1>
+         </div>
+         <div class="testimonial-carousel-tab" id="tab-3">
+          <i class="fas fa-quote-left"></i>
+          <p class="testimonial-comment">One of the best restaurants I've been to. The burgers are excellent. This is a nice place to eat. Not to mention that when I order online, the order arrives very fest. I am very happy</p>
+          <h1 class="testimonial-name">Roxanne  White</h1>
+         </div>
+         <div class="testimonial-carousel-tab" id="tab-4">
+          <i class="fas fa-quote-left"></i>
+          <p class="testimonial-comment">One of the best restaurants I've been to. The burgers are excellent. This is a nice place to eat.</p>
+          <h1 class="testimonial-name">Dillon Hill</h1>
+         </div>
+       </div>
+       <div class="testimonial-button">
+         <button class="current-dot" data-target-slide="#tab-1"></button>
+         <button data-target-slide="#tab-2"></button>
+         <button data-target-slide="#tab-3"></button>
+         <button data-target-slide="#tab-4"></button>
+       </div>
+      </div>
+    </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo"><img src="img/burger-artwork.png"></div>
+      <div class="footer-info">
+        <div class="footer-column">
+          <h1>Address</h1>
+          <p>570 8th Ave.</p>
+          <p>New York, Ny 100118</p>
+          <p>United States</p>
+        </div>
+        <div class="footer-column">
+          <h1>Book a table</h1>
+          <p>Book one of out tables!</p>
+          <p>+880 196 7979 110</p>
+        </div>
+        <div class="footer-column">
+          <h1>Opening hours</h1>
+          <p>Monday - Friday</p>
+          <p>10.00AM - 11.00PM</p>
+        </div>
+        <div class="footer-column">
+          <h1>Instagram-feed</h1>
+        </div>
+      </div>
+      </div>
+
+    </footer>
+
+  </div>
+  </body>
+</html>
