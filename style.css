@@ -9,12 +9,21 @@
   --black: #222222;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1920px;
 }
 
 body {
   font-family: "Kanit", sans-serif;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 .nav-bar {
@@ -649,7 +658,6 @@ body {
   font-size: 32px;
   font-weight: 800;
   color: var(--black);
-  transition: all 2000ms ease;
 }
 .testimonial-button button {
   width: 10px;
@@ -677,9 +685,10 @@ body {
 
 footer {
   width: 100%;
-  height: 500px;
-  background-image: url(img/footer-background-01.svg);
-  background-size: 200%;
+  padding: 100px 20px;
+  background-image: url(img/footer-background-svg.svg);
+  background-repeat: repeat;
+  background-size: 50%;
   background-position: center;
   color: white;
   display: flex;
@@ -938,6 +947,7 @@ footer {
   .nav-links {
     position: absolute;
     right: 0;
+    bottom: 0;
     height: 92vh;
     width: 100%;
     top: 8vh;
@@ -1029,9 +1039,8 @@ footer {
 
 @media (max-width: 576px) {
   .slide {
-    padding: 480px 10% 0 5%;
+    padding: 450px 10% 0 5%;
   }
-
   .subtitle {
     font-size: 1em;
     margin-bottom: 10px;
@@ -1041,25 +1050,124 @@ footer {
     margin-left: 20px;
   }
   .title h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
-
   .info-section {
     display: none;
   }
   .side-img {
-    width: 300px;
+    width: 280px;
   }
   .burger-bg {
-    width: 400px;
+    width: 300px;
   }
   .button-nav {
     left: 5%;
+  }
+  footer {
+    background-size: 200%;
+    padding: 50px 20px;
+  }
+  .footer-logo img {
+    width: 100px;
+  }
+  .footer-info {
+    gap: 20px;
+  }
+  .footer-column h1 {
+    font-size: 25px;
   }
 }
 
 @media (max-width: 400px) {
   .button-nav {
     bottom: -120px;
+  }
+  .section-titles h1 {
+    font-size: 1.8em;
+  }
+  .section-titles p {
+    font-size: 1em;
+  }
+  .promo-card-section {
+    padding: 20px 20px 20px 20px;
+  }
+  .promo-card-small {
+    width: 300px;
+  }
+  .promo-card-1 {
+    max-width: 300px;
+  }
+  .promo-card-2 {
+    width: 300px;
+  }
+  .delivery-section {
+    margin: 50px 0px;
+  }
+  .delivery-title {
+    font-size: 2.3em;
+  }
+  .text-section {
+    margin-bottom: 20px;
+  }
+  .welcome-title {
+    font-size: 2.3em;
+    margin-bottom: 5px;
+  }
+  .menu-item h2 {
+    font-size: 18px;
+  }
+  .testimonial-section {
+    margin-bottom: 100px;
+    padding: 0px 20px;
+  }
+  .testimonial-img {
+    width: 280px;
+  }
+  .testimonial-carousel p {
+    font-size: 20px;
+  }
+  .slide {
+    padding: 310px 10% 0 5%;
+  }
+  .subtitle {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .subtitle-line {
+    width: 70px;
+    margin-left: 20px;
+  }
+  .title h1 {
+    font-size: 2.3rem;
+  }
+  .info-section {
+    display: none;
+  }
+  .side-img {
+    width: 260px;
+  }
+  .burger-bg {
+    width: 280px;
+  }
+  .button-nav {
+    left: 5%;
+  }
+}
+@media (max-width: 375px) {
+  .slide {
+    padding: 450px 10% 0 5%;
+  }
+  .promo-card-section {
+    padding: 20px 20px 20px 20px;
+  }
+  .promo-card-small {
+    width: 250px;
+  }
+  .promo-card-1 {
+    max-width: 250px;
+  }
+  .promo-card-2 {
+    width: 250px;
   }
 }

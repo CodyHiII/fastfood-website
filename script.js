@@ -265,18 +265,53 @@ const testimonialCarousel = () => {
   const testimonialButtons = document.querySelectorAll("[data-target-slide]");
   const tabContent = document.querySelectorAll(".testimonial-carousel-tab");
 
-  testimonialButtons.forEach((button) => {
+  let testimonialCount = 0;
+
+  let testimonialTime = 5000;
+
+  const changeTestimonial = () => {
+    if (testimonialCount >= tabContent.length - 1) {
+      testimonialCount = 0;
+    }
+
+    testimonialCount++;
+
+    tabContent.forEach((tab, i) => {
+      tab.classList.remove("current-tab");
+
+      if (testimonialCount === i) {
+        tab.classList.add("current-tab");
+      }
+    });
+    testimonialButtons.forEach((button, i) => {
+      button.classList.remove("current-dot");
+
+      if (testimonialCount === i) {
+        button.classList.add("current-dot");
+      }
+    });
+  };
+
+  window.onload = () => {
+    nextTestimonialTime = setInterval(changeTestimonial, testimonialTime);
+  };
+
+  testimonialButtons.forEach((button, i) => {
     button.addEventListener("click", () => {
       let target = document.querySelector(button.dataset.targetSlide);
       tabContent.forEach((content) => {
         content.classList.remove("current-tab");
       });
       target.classList.add("current-tab");
+      updateDot();
+    });
+
+    const updateDot = () => {
       testimonialButtons.forEach((button) => {
         button.classList.remove("current-dot");
       });
       button.classList.add("current-dot");
-    });
+    };
   });
 };
 testimonialCarousel();
